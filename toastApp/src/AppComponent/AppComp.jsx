@@ -76,7 +76,7 @@ export const ContextProvider = (props) => {
 
             const { data } = await axios.put(`${BASE_URL}/todo/updatetodo/${getTodoId}`, { title, dis},{
                 headers:{
-                    Authorization:getToken
+                    Authorization:`Bearer ${getToken}`
                 }
             });
 
